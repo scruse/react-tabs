@@ -1,10 +1,9 @@
 const JobDuties = ({ duties }) => {
-  console.log(duties)
   return (
     <div>
-      {duties.map((duty) => {
+      {duties.map((duty, index) => {
         return (
-          <div className="job-desc">
+          <div className="job-desc" key={index}>
             <p>{duty}</p>
           </div>
         )

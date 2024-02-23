@@ -1,6 +1,5 @@
 const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
   const setActiveBtn = (index) => {
-    console.log(index)
     setCurrentItem(index)
   }
 
@@ -11,6 +10,7 @@ const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
           <button
             className={currentItem === index ? 'job-btn active-btn' : 'job-btn'}
             onClick={() => setActiveBtn(index)}
+            key={index}
           >
             {job}
           </button>

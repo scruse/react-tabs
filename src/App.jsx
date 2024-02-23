@@ -14,7 +14,6 @@ const App = () => {
       const data = await response.json()
 
       setJobsData(data)
-      console.log(jobsData)
     } catch (error) {
       console.log(error)
     }
@@ -22,7 +21,6 @@ const App = () => {
   }
 
   const jobs = jobsData.map((job) => job.company)
-  console.log(jobs)
 
   useEffect(() => {
     fetchData()

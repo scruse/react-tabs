@@ -1,7 +1,6 @@
 import JobDuties from './JobDuties'
 
-const JobInfo = ({ company, dates, duties, id, order, title }) => {
-  console.log(duties)
+const JobInfo = ({ company, dates, duties, title }) => {
   return (
     <article>
       <h3>{title}</h3>
